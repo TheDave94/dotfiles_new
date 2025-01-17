@@ -4,6 +4,8 @@ This repository contains my dotfiles. Feel free to contribute or use that as a t
 
 ## Usage
 
+Before you start the installation, make sure to adjust the software you want or need. Mine is maybe different to yours. 
+
 ```bash
 $ cd ~/.config
 $ git clone https://github.com/f0xfiles/dotfiles.git
