@@ -67,6 +67,7 @@ pkgs=(
   "gimp"
   "kvantum"
   "lazygit"
+  "kdeconnect"
 # ---------- # 
   "cmake"
   "clang"
