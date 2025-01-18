@@ -53,6 +53,7 @@ pkgs=(
   "xclip"
   "tree"
   "ripgrep"
+  "libva-nvidia-driver"
 # ----------- #  
   "bitwarden"
   "vlc"
