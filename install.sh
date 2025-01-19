@@ -148,6 +148,19 @@ echo "--- Configuring Neovim ---"
 
 ln -sf $PWD/config/nvim ~/.config/
 
+echo "--- Installing Language Servers ---"
+
+sudo pacman -S --needed --noconfirm go pyright
+
+sudo npm i -g vscode-langservers-extracted
+sudo npm install -g typescript typescript-language-server
+
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/nametake/golangci-lint-langserver@latest
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+
 echo "--- Configuring Starship ---"
 
 ln -sf $PWD/config/starship.toml ~/.config/
