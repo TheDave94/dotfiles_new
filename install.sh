@@ -110,6 +110,7 @@ aurpkgs=(
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
+  "balena-etcher"
 )
 
 for pkg in ${aurpkgs[@]}; do
