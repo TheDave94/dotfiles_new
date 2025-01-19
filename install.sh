@@ -53,7 +53,6 @@ pkgs=(
   "xclip"
   "tree"
   "ripgrep"
-  "libva-nvidia-driver"
 # ----------- #  
   "bitwarden"
   "vlc"
@@ -166,6 +165,8 @@ echo "--- Configuring Starship ---"
 ln -sf $PWD/config/starship.toml ~/.config/
 
 echo "--- Configuring Nvidia ---"
+
+sudo pacman -S --needed --noconfirm libva-nvidia-driver
 
 sudo systemctl enable nvidia-suspend.service
 sudo systemctl enable nvidia-hibernate.service
