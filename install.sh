@@ -61,7 +61,7 @@ pkgs=(
   "gufw"
   "linux-firmware-qlogic"
   "spotify-launcher"
-  "wezterm"
+  "ghostty"
   "neovim"
   "intellij-idea-community-edition"
   "spectacle"
@@ -139,9 +139,10 @@ echo "--- Configuring Zsh ---"
 chsh -s $(which zsh)
 ln -sf $PWD/config/.zshrc ~/
 
-echo "--- Configuring Wezterm ---"
+echo "--- Configuring Ghostty ---"
 
-ln -sf $PWD/config/wezterm/.wezterm.lua ~/
+mkdir -p ~/.config/ghostty/
+ln -sf $PWD/config/ghostty/config ~/.config/ghostty/
 
 echo "--- Configuring Neovim ---"
 
