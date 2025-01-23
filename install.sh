@@ -103,13 +103,12 @@ aurpkgs=(
   "visual-studio-code-bin"
   "anydesk-bin"
   "rustdesk-bin"
-  "github-desktop-bin"
   "swift-bin"
   "brave-bin"
-  "todoist-appimage"
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
+  "zen-twilight-bin"
 )
 
 for pkg in ${aurpkgs[@]}; do
