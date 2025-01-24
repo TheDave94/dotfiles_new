@@ -109,6 +109,7 @@ aurpkgs=(
   "megasync-bin"
   "ttf-maple"
   "zen-browser-bin"
+  "apple-fonts"
 )
 
 for pkg in ${aurpkgs[@]}; do
