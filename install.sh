@@ -108,7 +108,7 @@ aurpkgs=(
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
-  "zen-twilight-bin"
+  "zen-browser-bin"
 )
 
 for pkg in ${aurpkgs[@]}; do
