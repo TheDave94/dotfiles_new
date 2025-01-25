@@ -108,7 +108,6 @@ aurpkgs=(
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
-  "zen-browser-bin"
   "apple-fonts"
 )
 
