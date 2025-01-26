@@ -4,7 +4,7 @@ echo "--- Updating System ---"
 
 sudo pacman -Syuu --noconfirm
 
-sudo pacman -Rncs --noconfirm kate vim
+sudo pacman -Rncs --noconfirm vim gnome-music totem yelp gnome-contacts gnome-clocks gnome-maps gnome-weather epiphany
 
 echo "--- Installing AUR-Helper ---"
 
@@ -65,9 +65,7 @@ pkgs=(
   "intellij-idea-community-edition"
   "spectacle"
   "gimp"
-  "kvantum"
   "lazygit"
-  "kdeconnect"
 # ---------- # 
   "cmake"
   "clang"
@@ -148,16 +146,10 @@ ln -sf $PWD/config/nvim ~/.config/
 
 echo "--- Installing Language Servers ---"
 
-sudo pacman -S --needed --noconfirm go pyright
+sudo pacman -S --needed --noconfirm pyright
 
 sudo npm i -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
-
-go install golang.org/x/tools/gopls@latest
-go install github.com/go-delve/delve/cmd/dlv@latest
-go install golang.org/x/tools/cmd/goimports@latest
-go install github.com/nametake/golangci-lint-langserver@latest
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 
 echo "--- Configuring Starship ---"
 
