@@ -4,7 +4,7 @@ echo "--- Updating System ---"
 
 sudo pacman -Syuu --noconfirm
 
-sudo pacman -Rncs --noconfirm vim gnome-music totem yelp gnome-contacts gnome-clocks gnome-maps gnome-weather epiphany
+sudo pacman -Rncs --noconfirm vim kate
 
 echo "--- Installing AUR-Helper ---"
 
