@@ -64,8 +64,15 @@ pkgs=(
   "neovim"
   "intellij-idea-community-edition"
   "spectacle"
+  "kvantum"
   "gimp"
   "lazygit"
+  "system-config-printer"
+# ---------- # 
+  "materia-kde"
+  "kvantum-theme-materia"
+  "materia-gtk-theme"
+  "gtk-engine-murrine"
 # ---------- # 
   "cmake"
   "clang"
@@ -106,7 +113,6 @@ aurpkgs=(
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
-  "apple-fonts"
 )
 
 for pkg in ${aurpkgs[@]}; do
