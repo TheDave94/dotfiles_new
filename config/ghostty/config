@@ -1,7 +1,7 @@
 term = xterm-ghostty
 
-theme = dark:tokyonight, light:tokyonight
-background-opacity = 0.95
+theme = dark:catppuccin-macchiato, light:catppuccin-macchiato
+background-opacity = 1.0
 background-blur-radius = 64
 
 cursor-style = block

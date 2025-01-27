@@ -31,8 +31,8 @@ return {
         "cssls",
         "lua_ls",
         "pyright",
-        "gopls",
         "ts_ls",
+        "gopls",
       },
     })
 

@@ -91,6 +91,9 @@ alias repos="cd ~/Repos/"
 alias dot="cd ~/.config/dotfiles/"
 
 # -- Sourcing
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
