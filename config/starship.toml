@@ -1,73 +1,182 @@
-########################################
-# prompt global settings
-########################################
-
-# document link: https://starship.rs/ja-JP/config/#%E3%83%95%E3%82%9A%E3%83%AD%E3%83%B3%E3%83%95%E3%82%9A%E3%83%88
-# format = "$all"
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_commit\
-$git_state\
-$git_status\
-$character"""
-add_newline = true
-
-########################################
-# prompt detail settings
-########################################
-
-
-[username]
-disabled = false
-show_always = true
-style_user = "white bold"
-style_root = "white bold"
-format = "󰣇 [$user]($style)"
-
-[hostname]
-format = "@[$hostname]($style) "
-style = "bold"
-ssh_only = false
-
-[directory]
-truncation_length = 0
-truncate_to_repo = false
-
-## Git settings
-[git_branch]
-style = "bold purple"
-# symbol = "🌱 "
-truncation_length = 100  # no truncation
-truncation_symbol = "..."
-
-[git_status]
-modified = "M"
-untracked = "U"
-deleted = "🗑 "
-renamed = "👅"
-conflicted = "🏳 "
-ahead = "⇡"  # unpushed commit
-behind = "😰"
-diverged = "😵"
-
-[git_state]
-cherry_pick = "🍒 PICKING"
-
-[time]
-disabled = false
-format = "[$time]($style) "
-style = "bold yellow"
-use_12hr = false
-time_format = "at %T | %d.%m.%Y"
-
-[line_break]
-disabled = true # separate prompt into 2 lines
+# https://github.com/dmmulroy/dotfiles/blob/main/.config/starship/config.toml
+# Taken from dmmulroy. Just changed a bit. Thanks for sharing!
 
 [character]
-# symbol = "🍺"
-disabled = false
-success_symbol = "[](bold green)" 
-error_symbol = "[✗](bold red) "
+success_symbol = '[󰣇](bold green)'
+error_symbol = '[󰣇](bold red)'
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
+
+[gradle]
+symbol = " "
