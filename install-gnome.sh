@@ -105,10 +105,12 @@ aurpkgs=(
   "visual-studio-code-bin"
   "anydesk-bin"
   "rustdesk-bin"
-  "swift-bin"
   "zen-browser-bin"
+  "brave-bin"
   "onlyoffice-bin"
   "megasync-bin"
+  "swift-bin"
+  "extension-manager"
   "ttf-maple"
 )
 
