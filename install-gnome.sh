@@ -5,8 +5,8 @@ echo "--- Updating System ---"
 sudo pacman -Syuu --noconfirm
 
 # https://unix.stackexchange.com/questions/691386/remove-preinstalled-gnome-applications
-sudo pacman -Rncs --noconfirm vim gnome-music totem yelp gnome-contacts gnome-clocks gnome-maps gnome-weather epiphany malcontent
-sudo pacman -S --needed --noconfirm flatpak
+sudo pacman -Rncs --noconfirm vim gnome-music totem yelp gnome-contacts gnome-clocks gnome-maps gnome-weather epiphany malcontent gnome-tour
+sudo pacman -S --needed --noconfirm flatpak libportal-gtk3
 
 echo "--- Installing AUR-Helper ---"
 
@@ -68,6 +68,7 @@ pkgs=(
   "gimp"
   "lazygit"
   "system-config-printer"
+  "tmux"
 # ---------- # 
   "materia-gtk-theme"
   "gtk-engine-murrine"
