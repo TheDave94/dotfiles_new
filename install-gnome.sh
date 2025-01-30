@@ -155,6 +155,11 @@ sudo pacman -S --needed --noconfirm pyright
 sudo npm i -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
 
+echo "--- Tmux ---"
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -sf $PWD/config/tmux/.tmux.conf ~/
+
 echo "--- Configuring Starship ---"
 
 ln -sf $PWD/config/starship.toml ~/.config/
