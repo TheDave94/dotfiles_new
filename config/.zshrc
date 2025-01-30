@@ -92,7 +92,9 @@ alias dot="cd ~/.config/dotfiles/"
 
 # -- Sourcing
 
-if [ "$TMUX" = "" ]; then tmux; fi
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+	exec tmux new-session -A -s default
+fi
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
