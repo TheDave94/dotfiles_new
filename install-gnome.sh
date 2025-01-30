@@ -110,7 +110,6 @@ aurpkgs=(
   "brave-bin"
   "onlyoffice-bin"
   "megasync-bin"
-  "swift-bin"
   "extension-manager"
   "ttf-maple"
 )
