@@ -64,14 +64,12 @@ pkgs=(
   "spotify-launcher"
   "ghostty"
   "neovim"
-  "intellij-idea-community-edition"
   "gimp"
   "lazygit"
   "system-config-printer"
   "tmux"
 # ---------- # 
-  "materia-gtk-theme"
-  "gtk-engine-murrine"
+
 # ---------- # 
   "cmake"
   "clang"
@@ -112,6 +110,7 @@ aurpkgs=(
   "megasync-bin"
   "extension-manager"
   "ttf-maple"
+  "jdk-temurin"
 )
 
 for pkg in ${aurpkgs[@]}; do
