@@ -62,7 +62,6 @@ pkgs=(
   "spotify-launcher"
   "ghostty"
   "neovim"
-  "intellij-idea-community-edition"
   "spectacle"
   "kvantum"
   "gimp"
@@ -79,7 +78,6 @@ pkgs=(
   "ninja"
   "gdb"
   "python"
-  "go"
   "nodejs"
   "npm"
 # ---------- # 
@@ -89,6 +87,7 @@ pkgs=(
   "noto-fonts-cjk"
   "noto-fonts-extra"
   "noto-fonts-emoji"
+  "inter-font"
 )
 
 for pkg in "${pkgs[@]}"; do
@@ -156,6 +155,11 @@ sudo pacman -S --needed --noconfirm pyright
 
 sudo npm i -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
+
+echo "--- Tmux ---"
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -sf $PWD/config/tmux/.tmux.conf ~/
 
 echo "--- Configuring Starship ---"
 
