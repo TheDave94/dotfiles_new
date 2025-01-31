@@ -67,6 +67,7 @@ pkgs=(
   "gimp"
   "lazygit"
   "system-config-printer"
+  "intellij-idea-community-edition"
 # ---------- # 
   "materia-kde"
   "kvantum-theme-materia"
@@ -77,6 +78,7 @@ pkgs=(
   "clang"
   "ninja"
   "gdb"
+  "go"
   "python"
   "nodejs"
   "npm"
@@ -112,6 +114,7 @@ aurpkgs=(
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
+  "jdk-temurin"
 )
 
 for pkg in ${aurpkgs[@]}; do
@@ -151,10 +154,16 @@ ln -sf $PWD/config/nvim ~/.config/
 
 echo "--- Installing Language Servers ---"
 
-sudo pacman -S --needed --noconfirm pyright
+sudo pacman -S --needed --noconfirm pyright go
 
 sudo npm i -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
+
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/nametake/golangci-lint-langserver@latest
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 
 echo "--- Tmux ---"
 
