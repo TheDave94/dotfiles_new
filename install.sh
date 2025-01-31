@@ -195,6 +195,8 @@ sudo mkinitcpio -P
 
 echo "--- Rebooting ---"
 
+echo "-- Install Plasma Drawer and Wallpaper Effects from the Store --"
+
 echo "-- Installation Finished"
 echo "-- Press enter to continue --"
 read
