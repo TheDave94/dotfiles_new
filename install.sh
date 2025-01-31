@@ -156,6 +156,7 @@ ln -sf $PWD/config/nvim ~/.config/
 echo "--- Installing Language Servers ---"
 
 sudo pacman -S --needed --noconfirm pyright go
+yay -S --needed --noconfirm jdtls kotlin-language-server
 
 sudo npm i -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
