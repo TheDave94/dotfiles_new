@@ -112,6 +112,7 @@ aurpkgs=(
   "rustdesk-bin"
   "swift-bin"
   "brave-bin"
+  "librewolf-bin"
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
