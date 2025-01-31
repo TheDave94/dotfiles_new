@@ -165,6 +165,20 @@ go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/nametake/golangci-lint-langserver@latest
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 
+echo "--- Installing Themes ---"
+
+git clone https://github.com/vinceliuice/WhiteSur-cursors.git
+cd WhiteSur-cursors
+./install.sh 
+cd ..
+rm -rf WhiteSur-cursors
+
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
+cd Tela-circle-icon-theme
+./install.sh manjaro
+cd ..
+rm -rf Tela-circle-icon-theme
+
 echo "--- Tmux ---"
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
