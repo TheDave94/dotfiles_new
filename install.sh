@@ -82,6 +82,7 @@ pkgs=(
   "python"
   "nodejs"
   "npm"
+  "kotlin"
 # ---------- # 
   "ttf-meslo-nerd"
   "powerline-fonts"
