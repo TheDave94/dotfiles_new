@@ -110,8 +110,6 @@ aurpkgs=(
   "visual-studio-code-bin"
   "anydesk-bin"
   "rustdesk-bin"
-  "swift-bin"
-  "brave-bin"
   "librewolf-bin"
   "onlyoffice-bin"
   "megasync-bin"
