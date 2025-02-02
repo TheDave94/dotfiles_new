@@ -60,7 +60,7 @@ pkgs=(
   "gufw"
   "linux-firmware-qlogic"
   "spotify-launcher"
-  "ghostty"
+  "kitty"
   "neovim"
   "spectacle"
   "kvantum"
@@ -144,10 +144,11 @@ echo "--- Configuring Zsh ---"
 chsh -s $(which zsh)
 ln -sf $PWD/config/.zshrc ~/
 
-echo "--- Configuring Ghostty ---"
+echo "--- Configuring Kitty ---"
 
-mkdir -p ~/.config/ghostty/
-ln -sf $PWD/config/ghostty/config ~/.config/ghostty/
+mkdir -p ~/.config/kitty/
+ln -sf $PWD/config/kitty/kitty.conf ~/.config/kitty/
+ln -sf $PWD/config/kitty/current-theme.conf ~/.config/kitty/
 
 echo "--- Configuring Neovim ---"
 
