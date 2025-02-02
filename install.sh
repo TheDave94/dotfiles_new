@@ -91,6 +91,7 @@ pkgs=(
   "noto-fonts-extra"
   "noto-fonts-emoji"
   "inter-font"
+  "ttf-ibm-plex"
 )
 
 for pkg in "${pkgs[@]}"; do
