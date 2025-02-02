@@ -17,6 +17,7 @@ pkgs=(
   "lib32-libxcomposite"
   "cabextract"
   "wine-mono"
+  "winetricks"
 )
 
 for pkg in ${pkgs[@]}; do
