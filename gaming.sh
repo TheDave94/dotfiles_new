@@ -14,10 +14,10 @@ pkgs=(
   "steam"
   "wine"
   "winetricks"
+  "wine-mono"
   "lutris"
   "lib32-libxcomposite"
   "cabextract"
-  "wine-mono"
 )
 
 for pkg in ${pkgs[@]}; do
