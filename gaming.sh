@@ -13,11 +13,11 @@ fi
 pkgs=(
   "steam"
   "wine"
+  "winetricks"
   "lutris"
   "lib32-libxcomposite"
   "cabextract"
   "wine-mono"
-  "winetricks"
 )
 
 for pkg in ${pkgs[@]}; do
