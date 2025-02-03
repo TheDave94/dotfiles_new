@@ -53,6 +53,7 @@ pkgs=(
   "xclip"
   "tree"
   "ripgrep"
+  "tmux"
 # ----------- #  
   "bitwarden"
   "vlc"
