@@ -28,7 +28,6 @@ done
 echo "--- Installing AUR Software ---"
 
 aurpkgs=(
-  "heroic-games-launcher-bin"
   "protonup-qt"
 )
 
