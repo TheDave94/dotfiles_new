@@ -69,7 +69,6 @@ pkgs=(
   "lazygit"
   "system-config-printer"
   "intellij-idea-community-edition"
-  "virtualbox"
 # ---------- # 
   "materia-kde"
   "kvantum-theme-materia"
@@ -118,7 +117,7 @@ aurpkgs=(
   "megasync-bin"
   "ttf-maple"
   "jdk-temurin"
-  "virtualbox-ext-oracle"
+  "vmware-workstation"
 )
 
 for pkg in ${aurpkgs[@]}; do
@@ -132,13 +131,12 @@ sudo systemctl enable cups.service
 sudo systemctl enable cups.socket
 sudo systemctl start cups.service
 
+sudo systemctl enable vmware-networks.service
+sudo systemctl start vmware-networks.service
+
 modprobe btusb
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
-
-echo "--- Configuring Virtualbox ---"
-
-sudo usermod -aG vboxusers $USER
 
 echo "--- Configuring Firewall ---"
 
