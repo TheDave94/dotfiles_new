@@ -133,6 +133,8 @@ sudo systemctl start cups.service
 
 sudo systemctl enable vmware-networks.service
 sudo systemctl start vmware-networks.service
+sudo systemctl enable vmware-usbarbitrator
+sudo systemctl start vmware-usbarbitrator
 
 modprobe btusb
 sudo systemctl enable bluetooth.service
