@@ -112,7 +112,7 @@ aurpkgs=(
   "visual-studio-code-bin"
   "anydesk-bin"
   "rustdesk-bin"
-  "brave-bin"
+  "brave-beta-bin"
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
