@@ -91,8 +91,6 @@ pkgs=(
   "noto-fonts-cjk"
   "noto-fonts-extra"
   "noto-fonts-emoji"
-  "inter-font"
-  "ttf-ibm-plex"
 )
 
 for pkg in "${pkgs[@]}"; do
@@ -116,6 +114,7 @@ aurpkgs=(
   "onlyoffice-bin"
   "megasync-bin"
   "ttf-maple"
+  "ttf-ms-win11-auto"
   "jdk-temurin"
   "vmware-workstation"
 )
@@ -164,7 +163,6 @@ ln -sf $PWD/config/nvim ~/.config/
 echo "--- Installing Language Servers ---"
 
 sudo pacman -S --needed --noconfirm pyright go
-yay -S --needed --noconfirm jdtls kotlin-language-server
 
 sudo npm i -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
