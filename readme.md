@@ -8,8 +8,8 @@ Before you start the installation, make sure to adjust the software you want or 
 
 ```bash
 $ cd ~/.config
-$ git clone https://github.com/f0xfiles/dotfiles.git
-$ cd dotfiles
+$ git clone https://github.com/TheDave94/dotfiles_new.git
+$ cd dotfiles_new
 $ chmod 755 install.sh
 $ ./install.sh
 ```
