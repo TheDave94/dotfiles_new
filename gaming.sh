@@ -29,6 +29,7 @@ echo "--- Installing AUR Software ---"
 
 aurpkgs=(
   "protonup-qt"
+  "xboxdrv"
 )
 
 for pkg in ${aurpkgs[@]}; do
