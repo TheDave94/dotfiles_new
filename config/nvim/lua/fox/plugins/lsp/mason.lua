@@ -32,9 +32,6 @@ return {
         "lua_ls",
         "pyright",
         "ts_ls",
-        "jdtls",
-        "kotlin_language_server",
-        "gopls"
       },
     })
 
