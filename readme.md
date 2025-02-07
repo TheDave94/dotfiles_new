@@ -16,4 +16,4 @@ $ ./install.sh
 
 ## Requirements
 * [Maple Mono (Nerd) Font](https://github.com/subframe7536/Maple-font): Which is used in most of my configs. Will be installed through AUR.
-* [Wezterm](https://github.com/wez/wezterm): Which is my Terminal Emulator of choice. Will be installed with Pacman.
+* [Kitty](https://sw.kovidgoyal.net/kitty/): Which is my Terminal Emulator of choice. Will be installed with Pacman.
