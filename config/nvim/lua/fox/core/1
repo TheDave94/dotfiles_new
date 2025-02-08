@@ -22,10 +22,14 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
 -- navigation commands
-keymap.set({'n', 'v'}, 'w', 'k', { noremap = true, silent = true })
-keymap.set({'n', 'v'}, 's', 'j', { noremap = true, silent = true })
-keymap.set({'n', 'v'}, 'a', 'h', { noremap = true, silent = true })
-keymap.set({'n', 'v'}, 'd', 'l', { noremap = true, silent = true })
+keymap.set('n', 'w', 'k', { noremap = true, silent = true })
+keymap.set('n', 's', 'j', { noremap = true, silent = true })
+keymap.set('n', 'a', 'h', { noremap = true, silent = true })
+keymap.set('n', 'd', 'l', { noremap = true, silent = true })
 
--- delete command
-keymap.set({'n', 'v'}, 'x', '<Del>', { noremap = true, silent = true })
+keymap.set('v', 'w', 'k', { noremap = true, silent = true })
+keymap.set('v', 's', 'j', { noremap = true, silent = true })
+keymap.set('v', 'a', 'h', { noremap = true, silent = true })
+keymap.set('v', 'd', 'l', { noremap = true, silent = true })
+
+
