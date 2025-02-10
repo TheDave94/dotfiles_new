@@ -2,6 +2,10 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
+-- cursor
+opt.guicursor = "n-v-c-i-ci-ve-r-cr-o:ver25"
+opt.virtualedit = "onemore"
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true
